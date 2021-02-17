@@ -1,0 +1,105 @@
+﻿(base) lucien@lucien-HP-Pavilion-Gaming-Laptop-15-dk0xxx:~/31172SPOSL/UNIX$ gcc C3.c
+C3.c: In function ‘main’:
+C3.c:26:5: warning: implicit declaration of function ‘wait’; did you mean ‘main’? [-Wimplicit-function-declaration]
+     wait();
+     ^~~~
+     main
+C3.c:71:11: warning: implicit declaration of function ‘psignal’ [-Wimplicit-function-declaration]
+           psignal(WTERMSIG(stat), "Exit signal");
+           ^~~~~~~
+(base) lucien@lucien-HP-Pavilion-Gaming-Laptop-15-dk0xxx:~/31172SPOSL/UNIX$ ./a.out
+UNIX COMMANDS EXECUTION
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:1
+
+PS
+
+  PID TTY          TIME CMD
+ 2718 pts/0    00:00:00 bash
+ 3715 pts/0    00:00:00 a.out
+ 3716 pts/0    00:00:00 ps
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:2
+
+Join file1 file2
+ABC DEF
+JKL MNO
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:3
+
+Fork
+
+Hello from Parent 3715!
+Hello from Child 3739!
+
+
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:4
+
+Wait
+
+In child
+In Parent
+Exit status: 1
+
+
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:5
+
+EXEC ls
+
+ a.out	 C3.c   file1   file2  'New Text Document.txt'
+
+
+Menu
+1.PS
+2.JOIN
+3.FORK
+4.WAIT
+5.Exec
+0.Exit
+Enter Your choice:0
+
+Thank You!
+
+(base) lucien@lucien-HP-Pavilion-Gaming-Laptop-15-dk0xxx:~/31172SPOSL/UNIX$ 
